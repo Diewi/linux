@@ -1155,6 +1155,13 @@ config SURFACE_3_BUTTON
 	---help---
 	  This driver handles the power/home/volume buttons on the Microsoft Surface 3 tablet.
 
+config SURFACEBOOK2_BUTTON
+	tristate "Microsoft Surface Book 2 button support"
+	depends on ACPI_SURFACE
+	---help---
+	  This driver adds support for the power, volume up, and volume down
+	  buttons found in the table unit of the MS Surface Book 2.
+
 config INTEL_PUNIT_IPC
 	tristate "Intel P-Unit IPC Driver"
 	---help---
