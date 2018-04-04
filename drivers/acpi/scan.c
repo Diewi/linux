@@ -1774,6 +1774,8 @@ static void acpi_device_dep_initialize(struct acpi_device *adev)
 
 	adev->dep_unmet = 0;
 
+	adev->dep_unmet = 0;
+
 	if (!acpi_has_method(adev->handle, "_DEP"))
 		return;
 

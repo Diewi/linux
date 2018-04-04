@@ -1162,6 +1162,15 @@ config SURFACEBOOK2_BUTTON
 	  This driver adds support for the power, volume up, and volume down
 	  buttons found in the table unit of the MS Surface Book 2.
 
+config ACPI_SURFACE
+	tristate "Microsoft Surface Extras"
+	depends on ACPI
+	depends on ACPI_WMI
+	depends on INPUT
+	---help---
+	  This driver adds support for access to certain system events
+	  on Microsoft Surface devices.
+
 config INTEL_PUNIT_IPC
 	tristate "Intel P-Unit IPC Driver"
 	---help---
